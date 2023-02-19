@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.dugme {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: small;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
+  color: white;
+  text-decoration: none;
+}
+
+/***********************
+header
+************************/
+header {
+  background-image: linear-gradient(rgba(26, 108, 122, 0.9), rgba(26, 108, 122, 0.3)), url(images/landscape-mountains-sky-4843193.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+header .linkovi {
+  padding: 2.5rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+header .linkovi nav a {
+  margin-left: 3rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+header .linkovi nav .izdvojen {
+  background-color: #1a6c7a;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: small;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
+}
+header .linkovi nav .izdvojen:hover {
+  background-color: #09353d;
+}
+header .naslovi {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  font-family: "Montserrat", sans-serif;
+}
+header .naslovi h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+header .naslovi h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+header .naslovi p {
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+header .naslovi .dugmici {
+  margin-top: 1rem;
+}
+header .naslovi .dugmici .levi {
+  border-color: white;
+  margin-right: 1rem;
+}
+header .naslovi .dugmici .desni {
+  color: #1a6c7a;
+  background-color: white;
+  margin-left: 1rem;
+}
+header .naslovi .dugmici .levi:hover {
+  background-color: #09353d;
+}
+header .naslovi .dugmici .desni:hover {
+  background-color: #09353d;
+  color: white;
+}
+
+/***********************
+fix
+************************/
+.fix {
+  position: fixed;
+  padding: 1rem;
+  background-color: white;
+  right: 0;
+  top: 40%;
+  font-family: "Montserrat", sans-serif;
+}
+.fix i {
+  color: blue;
+  margin-right: 0.5rem;
+}
+.fix a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/***********************
+service
+************************/
+.service {
+  height: 120vh;
+}
+.service .slike {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 5rem 12rem;
+}
+.service .slike article {
+  position: relative;
+}
+.service .slike article img {
+  height: 45vh;
+}
+.service .slike article h2 {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+.service .slike article h2:hover {
+  background-color: #1a6c7a;
+  opacity: 0.4;
+}
+.service .tekst {
+  display: flex;
+  padding: 5rem 12rem;
+  font-family: "Montserrat", sans-serif;
+}
+.service .tekst .naslov {
+  flex: 1;
+  font-size: large;
+}
+.service .tekst .telo {
+  flex: 1;
+}
+.service .tekst .telo p {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+.service .tekst .telo a {
+  color: #1a6c7a;
+  border-color: #1a6c7a;
+}
+.service .tekst .telo a:hover {
+  background-color: #09353d;
+  color: white;
+}
+
+/***********************
+fiksna pozadina
+************************/
+.fiksnaPozadina {
+  height: 80vh;
+  background-image: linear-gradient(rgba(26, 108, 122, 0.7), rgba(26, 108, 122, 0.7)), url(images/fogs-on-green-mountain-1054222.jpg);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.fiksnaPozadina h2 {
+  font-size: x-large;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+.fiksnaPozadina p {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.fiksnaPozadina a {
+  border-color: white;
+}
+.fiksnaPozadina a:hover {
+  color: #1a6c7a;
+  background-color: white;
+}
+
+/***********************
+slike
+************************/
+.poredjaneSlike {
+  padding: 5rem 12rem;
+}
+.poredjaneSlike .niz {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.poredjaneSlike .niz img {
+  width: 32%;
+  margin-bottom: 1rem;
+}
+
+/***********************
+footer
+************************/
+footer .prviDeo {
+  padding: 2.5rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  color: #1a6c7a;
+  font-family: "Montserrat", sans-serif;
+}
+footer .prviDeo .adresa p {
+  font-weight: bold;
+  margin: 2rem 0;
+  line-height: 1.5rem;
+}
+footer .prviDeo .adresa i {
+  margin-right: 1.5rem;
+  margin-left: 0.5rem;
+}
+footer .prviDeo .aboutUs h3 {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+footer .prviDeo .aboutUs a {
+  color: #1a6c7a;
+  text-decoration: none;
+  line-height: 1.5rem;
+}
+footer .prviDeo .connect h3 {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+footer .prviDeo .connect a {
+  color: #1a6c7a;
+  text-decoration: none;
+  line-height: 1.5rem;
+}
+footer .drugiDeo p {
+  margin: 2rem auto;
+  text-align: center;
+  color: #1a6c7a;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=style.css.map */

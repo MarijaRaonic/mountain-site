@@ -1,0 +1,320 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  img{
+    width: 100%;
+    display: block;
+  }
+
+  $primary: #1a6c7a;
+  $fontFamily: "Montserrat", sans-serif;
+  $transition: 0.5s;
+
+  .dugme {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: small;
+    font-family: $fontFamily;
+    letter-spacing: 0.10rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .container{
+    width: 80%;
+  }
+   
+
+
+/***********************
+header
+************************/
+
+header{
+    background-image: linear-gradient(rgba($primary, 0.9), rgba($primary, 0.3)), url(images/landscape-mountains-sky-4843193.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    .linkovi{
+        padding: 2.5rem 10rem;
+        display: flex;
+        justify-content: space-between;
+        nav{
+            a{
+                margin-left: 3rem;
+                color: white;
+                text-decoration: none;
+                font-family: $fontFamily;
+            }
+            .izdvojen{
+                background-color: $primary;
+                padding: 1rem 2rem;
+                text-transform: uppercase;
+                font-size: small;
+                font-family: $fontFamily;
+                letter-spacing: 0.10rem;
+            }
+            .izdvojen:hover{
+                background-color: #09353d;
+            }
+        }
+    }
+    .naslovi{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7rem;
+        font-family: $fontFamily;
+        h2{
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        h1{
+            font-size: 3rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        p{
+        text-align: center;
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+        }
+        .dugmici{
+            margin-top: 1rem;
+                .levi{
+                    border: 2px, solid, white;
+                    margin-right: 1rem;
+                }
+                .desni{
+                    color: $primary;
+                    background-color: white;
+                    margin-left: 1rem;
+                }
+                .levi:hover{
+                    background-color: #09353d;
+                }
+
+                .desni:hover{
+                    background-color: #09353d;
+                    color: white;
+                }
+            
+            
+        }
+
+    }
+    
+
+}
+
+/***********************
+fix
+************************/
+
+.fix{
+    position: fixed;
+    padding: 1rem;
+    background-color: white;
+    right: 0;
+    top: 40%;
+    font-family: $fontFamily;
+    i{
+        color: blue;
+        margin-right: 0.5rem;
+    }
+    a{
+      color: black;  
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+}
+
+/***********************
+service
+************************/
+
+.service{
+    height: 120vh;
+    .slike{
+    
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        padding: 5rem 12rem;
+        article{
+            position: relative;
+            img{
+                height: 45vh;
+            }
+            h2{
+                position: absolute;
+                font-family: $fontFamily;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                align-items: center;
+                color: white;
+                
+            }
+            h2:hover{
+                background-color: $primary;
+                opacity: 0.4;
+            }
+            
+        }
+        
+    }
+
+    .tekst{
+        display: flex;
+        padding: 5rem 12rem;
+        font-family: $fontFamily;
+        .naslov{
+            flex: 1;
+            font-size: large;
+        }
+        
+        .telo{
+            flex: 1;
+            p{
+                margin-bottom: 2rem;
+                line-height: 1.5rem;
+            }
+            a{
+                color: $primary;
+                border-color: $primary;
+            }
+            a:hover{
+                background-color: #09353d;
+                    color: white;
+
+            }
+        }
+    }
+}
+
+/***********************
+fiksna pozadina
+************************/
+
+.fiksnaPozadina{
+    height: 80vh;
+    background-image:linear-gradient(rgba($primary, 0.7), rgba($primary, 0.7)), url(images/fogs-on-green-mountain-1054222.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: $fontFamily;
+    h2{
+        font-size: x-large;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+    }
+    p{
+        margin-bottom: 2rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+    a{
+        border-color: white;
+    }
+    a:hover{
+        color: $primary;
+        background-color: white;
+    }
+}
+
+/***********************
+slike
+************************/
+
+.poredjaneSlike{
+    // background-color: $primary;
+    // opacity: 0.2;
+    padding: 5rem 12rem;
+
+    .niz{display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    img{
+        width: 32%;
+        margin-bottom: 1rem;
+        
+    }
+
+    }
+    
+}
+
+/***********************
+footer
+************************/
+  
+footer{
+    .container{
+    .prviDeo{
+        padding: 2.5rem 10rem;
+        display: flex;
+        justify-content: space-between;
+        color: $primary;
+        font-family: $fontFamily;
+                .adresa{
+            p{
+                font-weight: bold;
+                margin: 2rem 0;
+                line-height: 1.5rem;
+            }
+            i{
+               margin-right: 1.5rem; 
+               margin-left: 0.5rem;
+            }
+        }
+        .aboutUs{
+            align-self: flex-start;
+            
+            h3{
+                font-weight: 500;
+                margin-bottom: 1.5rem;
+            }
+            a{
+                color: $primary;
+                text-decoration: none;
+                line-height: 1.5rem;
+            }
+        }
+        .connect{
+            h3{
+                font-weight: 500;
+                margin-bottom: 1.5rem;
+            }
+            a{
+                color: $primary;
+                text-decoration: none;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
+.drugiDeo{
+    p{
+        margin: 2rem auto;
+        text-align: center;
+        color: $primary;
+        font-family: $fontFamily;
+    }
+}
+
+}
